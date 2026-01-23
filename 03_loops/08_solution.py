@@ -1,0 +1,9 @@
+number = 2
+is_prime = True
+
+if number > 1:
+    for i in range(2, int(number**0.5) + 1):
+        if number % i == 0:
+            is_prime = False
+            break
+print(f"{number} is a prime number: {is_prime}")
